@@ -28,3 +28,6 @@ The purpose of this analysis is to assess which ML model is optimized for assess
 
 ## Summary
 
+Of the models produced in this analysis, assuming the goal is solely to avoid high-risk loans, the preferred model to be utilized is the EasyEnsembleClassifier.  Despite having a fairly low F1 score (0.16), the model is the most successful in positively identifying high-risk loans with a recall/sensitivity of 0.92.  The model also accomplishes the lowest number of improperly identified low-risk loans, which would help to ensure that a minimal amount of low-risk loans aren't mistakenly identified as high-risk.
+
+However, there is also a strong argument for not using any of the models.  Utilizing these models will result in the rejection of several low-risk loans, which will mean missed revenue for the lender.  Given that there are so many more low-risk loans than there are high-risk loans, it may not be worth the lost revenue to try to filter out the high-risk loans.
